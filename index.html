@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QA Auditor Suite — Gestión Modular</title>
-    
+
     <!-- Meta Tags SEO -->
-    <meta name="description" content="Plataforma modular para la gestión de auditorías bancarias y pruebas QA por cooperativa.">
-    
+    <meta name="description"
+        content="Plataforma modular para la gestión de auditorías bancarias y pruebas QA por cooperativa.">
+
     <!-- CSS Modular -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
+
 </head>
+
 <body>
     <!-- App Shell -->
     <div id="app">
         <!-- Renderizado dinámico desde js/app.js -->
         <div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
             <div style="text-align: center;">
-                <div style="width: 40px; height: 40px; border: 4px solid var(--surface-border); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 15px;"></div>
+                <div
+                    style="width: 40px; height: 40px; border: 4px solid var(--surface-border); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 15px;">
+                </div>
                 <p style="color: var(--text-muted); font-size: 14px;">Iniciando Sistema...</p>
             </div>
         </div>
     </div>
 
     <style>
-        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 
     <!-- JS Modular (Entry Point) -->
     <script type="module" src="js/app.js"></script>
 </body>
+
 </html>
